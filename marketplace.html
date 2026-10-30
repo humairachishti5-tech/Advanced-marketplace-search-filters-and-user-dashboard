@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODIORA | Marketplace</title>
+    <link rel="stylesheet" href="week7.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>CODIORA</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Find the Perfect Service</h1>
+    <p>Discover talented freelancers and professional services.</p>
+</section>
+
+<main class="container">
+
+    <h2>Explore Marketplace</h2>
+
+    <div class="search-box">
+        <input type="text" id="searchInput"
+        placeholder="Search services, freelancers or skills...">
+
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <section class="filters">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="AI">AI</option>
+            <option value="Content Writing">Content Writing</option>
+        </select>
+
+        <input type="number" id="priceFilter"
+        placeholder="Maximum Price">
+
+        <select id="ratingFilter">
+            <option value="0">All Ratings</option>
+            <option value="4">4+ Stars</option>
+            <option value="4.5">4.5+ Stars</option>
+        </select>
+
+        <select id="deliveryFilter">
+            <option value="all">Any Delivery Time</option>
+            <option value="3">Within 3 Days</option>
+            <option value="7">Within 7 Days</option>
+        </select>
+
+        <select id="experienceFilter">
+            <option value="all">All Experience Levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select>
+
+        <select id="sortFilter">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="rating">Highest Rating</option>
+            <option value="popular">Most Popular</option>
+            <option value="newest">Newest</option>
+        </select>
+
+    </section>
+
+    <div class="results-heading">
+        <h2>Available Services</h2>
+        <p id="resultCount">Loading services...</p>
+    </div>
+
+    <div id="serviceContainer" class="service-grid"></div>
+
+    <p id="emptyMessage" class="empty-message" hidden>
+        No services found. Try different search filters.
+    </p>
+
+</main>
+
+<footer>
+    <p>CODIORA | Our Code Builds Your Vision</p>
+</footer>
+
+<script src="week7.js"></script>
+</body>
+</html>
